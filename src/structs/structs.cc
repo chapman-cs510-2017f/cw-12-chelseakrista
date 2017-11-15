@@ -57,17 +57,18 @@ void print_vec(const Vec2 &wr)
 }
 
 //TODO : Implement overloaded + operators
-Vec3 operator+(const Vec3  &m, const Vec3 &n){
+Vec3 operator+(const Vec3 m, const Vec3 n){
     Component x = m.x  + n.x;
     Component y = m.y + n.y;
-    Compnent z = m.z + n.z;
+    Component z = m.z + n.z;
     Vec3 g;
-    set_vec(&g, x,y,z); 
+    set_vec(g, x,y,z);
+    return g;
 }
-Vec2 operator+(const Vec2&, const Vec2&){
-    Component x = m.x  + n.x;
+Vec2 operator+(const Vec2& m, const Vec2& n){
+    Component x = m.x + n.x;
     Component y = m.y + n.y;
     Vec2 g;
-    set_vec(&g, x,y); 
-    
+    set_vec(g, x,y);
+    return g;
 }
