@@ -90,7 +90,23 @@ SValue Stack::pop()
 
 // TODO: Implementation of empty method
 // bool Stack::empty() const {}
+bool empty() const{
+    if(this->head == NULL){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
 
 
 // TODO: Implementation of print method
 // void Stack::print() {}
+void print() const{
+    SValue j;
+    j = Stack::pop();
+    while(j != -1){
+    cout << j <<endl;
+    j = Stack::pop();
+    }
+}
