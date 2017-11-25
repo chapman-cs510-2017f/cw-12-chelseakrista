@@ -1,3 +1,6 @@
+export CXX = g++
+export CXXFLAGS = -Wall -O2 -std=c++11
+
 all: test_stack
 
 test_stack: ../src/stack/stack.o

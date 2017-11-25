@@ -1,8 +1,8 @@
 # CS510 CW 12
 
-**Author(s):** **CHANGEME**
+**Author(s):** **Chelsea Parlett-Pelleriti, Kristalee Lio, Sharon Kim**
 
-[![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-12-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-12-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-12-chelseakristasharon.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-12-chelseakristasharon.svg?branch=master)
 
 ## Specification
 
@@ -49,7 +49,7 @@ Complete the following exercises, saving your solutions in the indicated files.
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+**C++ is definitely a new language, compared to C. Though we can see how C++ adds cool features and automates processes  for you, after coming from C, it's hard to know exactly what C++ is doing, because it does it behind the scenes rather than explicitly. Also, with C++ there's new error messages  we haven't encountered before, and it can be hard to decipher.**
 
 ## Honor Pledge
 
@@ -60,4 +60,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+**Chelsea Parlett-Pelleriti, Kristalee Lio, Sharon Kim**

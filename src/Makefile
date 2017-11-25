@@ -1,5 +1,6 @@
 # Makefile for main src
-
+export CXX = g++
+export CXXFLAGS = -Wall -O2 -std=c++11
 all:
 	$(MAKE) -C streams/
 	$(MAKE) -C structs/
