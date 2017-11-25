@@ -1,6 +1,6 @@
 #include <iostream>
 #include "stack.h"
-
+using namespace std;
 // TODO: Implementation of print for SValue
 // void print(SValue) {}
 
@@ -90,7 +90,7 @@ SValue Stack::pop()
 
 // TODO: Implementation of empty method
 // bool Stack::empty() const {}
-bool empty() const{
+bool Stack::empty() const{
     if(this->head == NULL){
         return true;
     }
@@ -102,11 +102,11 @@ bool empty() const{
 
 // TODO: Implementation of print method
 // void Stack::print() {}
-void print() const{
+void Stack::print() const{
     SValue j;
     j = Stack::pop();
     while(j != -1){
-    cout << j <<endl;
+    std::cout << j <<std::endl;
     j = Stack::pop();
     }
 }
