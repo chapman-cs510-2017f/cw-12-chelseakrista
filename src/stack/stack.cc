@@ -76,7 +76,7 @@ SValue Stack::pop()
     {
         // TODO: Fix this by throwing an exception properly
         // https://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm
-        return -1;
+        throw "STACK EMPTY";
     }
 
     SValue val = this->head->data;
