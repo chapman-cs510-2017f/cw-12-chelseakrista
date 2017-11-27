@@ -103,10 +103,11 @@ bool Stack::empty() const{
 // TODO: Implementation of print method
 // void Stack::print() {}
 void Stack::print() const{
+    Stack s = this;
     SValue j;
-    j = Stack::pop();
+    j = s.pop();
     while(j != -1){
     std::cout << j <<std::endl;
-    j = Stack::pop();
+    j = s.pop();
     }
 }
