@@ -103,7 +103,12 @@ bool Stack::empty() const{
 // TODO: Implementation of print method
 // void Stack::print() {}
 void Stack::print() const{
+    #make a copy of stack?
     
+    //use this to point to first node
+    //get value and print from node
+    //follow pointer in that node (next)
+    //repeat
     SValue j;
     j = s.pop();
     while(j != -1){
