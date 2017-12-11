@@ -2,7 +2,10 @@
 #include "stack.h"
 using namespace std;
 // TODO: Implementation of print for SValue
-// void print(SValue) {}
+void print(SValue val)
+{
+    std::cout << val << std::endl;
+}
 
 // Implementation of default constructor
 Stack::Stack()
@@ -51,6 +54,12 @@ void Stack::push(SValue val)
     // other references to this block of memory, so C++ is free to delete
     // at will
     //
+    
+    if (this->depth >= SIZE_MAX)
+    {
+        std::cout << "depth cannot increase beyond the numerical limit" << std::endl;
+        return;
+    }
     std::unique_ptr<Node> new_node_ptr(new Node());
 
     // Set the fields just as we would with a normal pointer
@@ -65,6 +74,8 @@ void Stack::push(SValue val)
     // automatically deallocated, since it is a unique_ptr
     // Again, we must move the new pointer uniquely to become the new head
     this->head = std::move(new_node_ptr);
+    
+    this->depth++;
 }
 
 
@@ -90,27 +101,23 @@ SValue Stack::pop()
 
 // TODO: Implementation of empty method
 // bool Stack::empty() const {}
-bool Stack::empty() const{
-    if(this->head == NULL){
-        return true;
-    }
-    else{
-        return false;
-    }
+bool Stack::empty() const
+{
+    return (this->head==nullptr);
 }
 
 
 // TODO: Implementation of print method
 // void Stack::print() {}
-void Stack::print() const{
-    //make a copy of stack?
-    Stack::Node * tNode = this->head.get();
+void Stack::print() const
+{
+    Node* tNode = this->head.get();
     //use this to point to first node
     //get value and print from node
     //follow pointer in that node (next)
     //repeat
-    while(tNode != NULL){
-    std::cout << tNode->data <<std::endl;
-    tNode = tNode->next.get();
+    while(tNode){
+        std::cout << tNode->data <<std::endl;
+        tNode = tNode->next.get();
     }
 }
