@@ -2,7 +2,7 @@
 
 **Author(s):** **Chelsea Parlett-Pelleriti, Kristalee Lio, Sharon Kim**
 
-[![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-12-chelseakristasharon.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-12-chelseakristasharon.svg?branch=master)
+[![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-12-chelseakristasharon.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-12-chelseakristasharon)
 
 ## Specification
 
